@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>Runtime</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: https://runtime.adobe.io https://stock.adobe.io 'unsafe-eval' 'unsafe-inline' ws://*; style-src 'self' 'unsafe-inline'; media-src *; img-src * data:">
+</head>
+
+<body ondomcontentLoaded="onLoad">
+  <h1>Runtime</h1>
+  <form role="search">
+    <div class="search-control">
+      <input type="search" id="search" name="q" placeholder="Search Adobe Stock..." aria-label="Search Adobe Stock">
+      <button>Search</button>
+    </div>
+    <div class="results-control"></div>
+  </form>
+  <script src="javascripts/index.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      onLoad();
+    });
+  </script>
+</body>
+
+</html>
